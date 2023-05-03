@@ -145,7 +145,7 @@ footer p {
 
 /* //for laptop view background image in body// */
 body {
-    background-image: url('/image/bg-lap.png');
+    background-image: url('image/bg-lap.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -155,7 +155,7 @@ body {
 /* //for mobile view background image in body// */
 @media only screen and (max-width: 600px) {
     body {
-        background-image: url('/image/bg-mob.png');
+        background-image: url('image/bg-mob.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
