@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="/image/profile pic.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Link Tree | Vaibhav Vishal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="/image/profile pic.jpg"
+                alt="">
+            <h3>Vaibhav Vishal</h3>
+            <br>
+            <p style="font: 600; font-size:small;">Passionate web developer.</p>
+            <p style="font: 600; font-size:small;">A Software engineer * Loves making new friends..</p>
+            <p style="font: 600; font-size:small;">have a dream to touch the sky.</p>
+            <br><br>
+            <p>❤let's connect and grow together❤</p>
+        </div>
+        <div class="links-list">
+            <div id="links-container"></div>
+        </div>
+        <div class="contact">
+            <a href="https://wa.link/rkzdol" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/vaibhav975/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/vaibhav_rankwar/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/vaibhav.rankwar.1"><i class="fab fa-facebook"></i></a>
+        </div>
+        <footer>
+            <p>Vaibhav Vishal 2023</p>
+        </footer>
+
+    </div>
+</body>
+<script>
+
+    const name = "Vaibhav Vishal";
+
+    const links = [
+        { text: "Portfolio", url: "https://vaibhav975.github.io/Portfolio/", title: "Take a look at some of my best work and let's build something great together!" },
+        { text: "LinkedIn", url: "https://www.linkedin.com/in/vaibhav975/", title: "Let's expand our professional networks and connect on LinkedIn!" },
+        { text: "GitHub", url: "https://github.com/vaibhav975", title: "Explore my code and projects on GitHub - the ultimate playground for developers!" },
+        { text: "Email", url: "mailto:vaibhavvishal277@gmail.com", title: "Feel free to drop me a line at any time - I'm always happy to chat!" },
+        { text: "Twitter", url: "https://twitter.com/ivaibhavishal", title: "Feel free to drop me a line at any time - I'm always happy to chat!" },
+        { text: "WhatsApp", url: "https://wa.link/rkzdol", title: "Need to get in touch with me quickly? Shoot me a message on WhatsApp!" },
+
+    ];
+
+    const container = document.getElementById("links-container");
+    links.forEach(link => {
+        const a = document.createElement("a");
+        a.href = link.url;
+        a.target = "_blank";
+        a.innerHTML = `<div title="${link.title}"  class="link"><p>${link.text}</p></div>`;
+        container.appendChild(a);
+    });
+</script>
+
+</html>

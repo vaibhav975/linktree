@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: linear-gradient(to right, #8e2de2, #fff); */
+  font-family: 'Nunito', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profile {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+.profile h3 {
+  font-size: 1.2rem;
+  color: #000000;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.profile p {
+  font-size: 0.8rem;
+  color: #000000;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.links-list .link {
+  border: 2px solid #000000;
+  margin-bottom: 1rem;
+  border-radius: 80px;
+  padding: 0.8rem;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+  flex-wrap: wrap;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links-list .link:hover {
+  background: #000000;
+  transform: scale(1.04);
+}
+
+.links-list .link:hover i {
+  color: #fff;
+}
+
+.links-list .link:hover p {
+  color: #fff;
+}
+
+.link i {
+  color: #000000;
+  position: relative;
+  font-size: 1.3rem;
+}
+
+.link p {
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 0.06rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+@media (max-width: 450px) {
+  .links-list .link {
+    width: 100%;
+  }
+  .link img {
+    padding-right: 1rem;
+  }
+  .link p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.contact i {
+  padding: 0.6rem;
+  border: 1.5px solid #000000;
+  margin: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.2rem;
+  color: #000000;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact i:hover {
+  background: #000000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+/* //for laptop view background image in body// */
+body {
+    background-image: url('/image/bg-lap.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* //for mobile view background image in body// */
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url('/image/bg-mob.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
