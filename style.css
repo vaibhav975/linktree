@@ -100,6 +100,7 @@ a {
 
 @media (max-width: 450px) {
   .links-list .link {
+    min-width: 280px !important;
     width: 100%;
   }
   .link img {
